@@ -7,11 +7,14 @@ public class AddressBook {
        buddyInfo.add(buddyInfo1);
     }
 
-    public void removeBuddy(){
-
+    public void removeBuddy(BuddyInfo buddyInfo1){
+        buddyInfo.remove(buddyInfo1);
     }
 
     public static void main(String[] args) {
-        System.out.println("Address Book");
+        BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
+        AddressBook addressBook = new AddressBook();
+        addressBook.addBuddy(buddy);
+        addressBook.removeBuddy(buddy);
     }
 }
