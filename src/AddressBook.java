@@ -2,6 +2,7 @@ import java.util.*;
 //SYSC 3110
 
 public class AddressBook {
+
     private ArrayList<BuddyInfo> myBuddies;
 
     public AddressBook(){
@@ -20,6 +21,12 @@ public class AddressBook {
         }
         return null;
     }
+
+    public ArrayList<BuddyInfo> getMyBuddies() {
+        return myBuddies;
+    }
+
+
 
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("Tom", "Carleton", "613");
